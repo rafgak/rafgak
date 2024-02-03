@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    body {
+        background-image: url('/modern-1.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    		background-color: antiquewhite;
+    }
+
+    /*nav */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: auto;
+        padding: 1.4rem 1rem;
+        background-color: #000000b5;
+        backdrop-filter: blur(10px);
+        border-radius: 1px;
+        margin-top: 0rem;
+        /* box-shadow: 0px 0px 3px rgb(254 116 62); */
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    li {
+        padding: 1rem 1.1rem;
+        float: left;
+    }
+
+    li a {
+        color: #e96d3f;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: .7px;
+    }
+
+    ul li a {
+        position: relative;
+    		
+    }
+
+    ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+    }
+
+    /* Center Animation */
+    ul li a::before {
+        transform: scale(0, 1);
+        transition: transform .90s ease;
+    }
+
+    ul li a:hover::before {
+        transform: scale(1, 1);
+    }
+    li a.active,
+    li a:hover {
+        color: #fff;
+        transition: all .2s ease-in-out;
+    }
+
+    #click {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    @media only screen and (max-width:1024px) {
+        nav {
+            max-width: 98%;
+        }
+    }
+
+    @media only screen and (max-iq1width:768px) {
+        html {
+            font-size: 80%;
+        }
+
+        nav {
+            max-width: 100%;
+        }
+    }
+
+    @media only screen and (max-width:480px) {
+        html {
+            font-size: 85%;
+        }
+
+        header {
+            height: 32vh;
+        }
+
+        li {
+            padding: 1rem 1.1rem;
+        }
+
+        .menu {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        ul {
+            width: 100%;
+            height: 19vh;
+            position: absolute;
+            display: center;
+            flex-direction: column;
+            text-align: center;
+            top: 5.5rem;
+            left: -100%;
+            background-color: #000000b5;
+            backdrop-filter: blur(10px);
+        		border-radius: 10px;
+        }
+
+        #click:checked~ul {
+            left: 0%;
+            transition: all 0.3s ease;
+        }
+    }
+
+.Name {
+		position: relative;
+		align-content: center;
+		justify-content: center;
+		display: flex;
+		font-size: 89px;
+		font-family: sans-serif;
+		color: #000;
+		-webkit-text-stroke-width: 5px;
+		text-shadow: 5px 5px 9px blue;
+		letter-spacing: 9px;
+		text-transform: uppercase;
+}
+
+.hoo {
+		font-size: 200%;
+		font-family: sans-serif;
+		width: 9px;
+}
+
+.bio {
+		display: absolute;
+		font-size: 1.1rem;
+		align-content: center;
+		text-align: center;
+		
+		justify-content: center;
+}
+
+.hoko{
+		position: relative;
+		align-content: center;
+		justify-content: center;
+		display: flex;
+		font-size: 45px;
+		font-family: sans-serif;
+		color: #000;
+		-webkit-text-stroke-width: 2px;
+		text-shadow: 5px 5px 9px red;
+		letter-spacing: 5px;
+		text-transform: uppercase;
+}
+
+.Exap{
+		position: relative;
+		font-family: segoe UI;
+		align-content: center;
+		justify-content: center;
+		display: flex;
+		font-size: 10px;
+		color: black;
+		width: 360px;
+		border-radius: 15px;
+}
+
+.udey img{
+
+		width: 100px;
+		right: 100px;
+		margin-left: 1px;
+}
+
+.udey {
+		display: flex;
+		justify-content: left;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+		margin-top: 1rem;
+		border: solid 1px black;
+		border-radius: 20px;
+		width: 90%;
+}
+
+.fullw {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.udeytext {
+    font-size: 12px;
+    padding-left: 10px;
+}
+
